@@ -20,15 +20,27 @@ class Proses extends CI_Controller {
 	 */
 	public function index()
 	{
-		//$this->load->view('welcome_message');
-		$this->load->view('index');
+		$vars['body'] = 'landing';
+		$this->load->view('base', $vars);
+		//$this->load->view('index');
 	}
 
-	public function submit() {
+	public function form($type = NULL) {
 
-		//echo $this->input->post('v1');
+		if (isset($type)) {
+			$vars['type'] = $type;
+			$vars['body'] = 'form';
+			$this->load->view('base', $vars);
+		} else {
+			redirect('proses');
+		}
+	}
 
-		// call model + insert into db
+	public function submit($type = NULL)
+	{
+		if(isset($type)) {
+			$this->mfeedback->insert_feedback($type);
+		}
 
 		redirect('proses');
 	}
