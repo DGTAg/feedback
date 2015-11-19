@@ -46,39 +46,55 @@
       //var v2 = $('#v2').val();
       //var v3 = $('#v3').val();
 
+
+
+
       $('#input-q1').on('rating.change', function(event, value, caption) {
           console.log(value);
           $('#v1').val(value);
           //alert(value);
           //console.log(caption);
-          if ($('#v1').val() < 1 && $('#v2').val() < 1 && $('#v3').val() < 1) {
-            $('#btnSubmit').prop('disabled', true);  
-          } 
-          else {
-            $('#btnSubmit').prop('disabled', false);
-          }
+          // if ($('#v1').val() < 1 && $('#v2').val() < 1 && $('#v3').val() < 1) {
+          //   $('#btnSubmit').prop('disabled', true);  
+          // } 
+          // else {
+          //   $('#btnSubmit').prop('disabled', false);
+          // }
       });
       $('#input-q2').on('rating.change', function(event, value, caption) {
           console.log(value);
           $('#v2').val(value);
           //console.log(caption);
-          if ($('#v1').val() < 1 && $('#v2').val() < 1 && $('#v3').val() < 1) {
-            $('#btnSubmit').prop('disabled', true);  
-          } 
-          else {
-            $('#btnSubmit').prop('disabled', false);
-          }
+          // if ($('#v1').val() < 1    &&      $('#v2').val() < 1    &&     $('#v3').val() < 1) {
+          //   $('#btnSubmit').prop('disabled', true);  
+          // } 
+          // else {
+          //   $('#btnSubmit').prop('disabled', false);
+          // }
       });
       $('#input-q3').on('rating.change', function(event, value, caption) {
           console.log(value);
           $('#v3').val(value);
           //console.log(caption);
-          if ($('#v1').val() < 1 && $('#v2').val() < 1 && $('#v3').val() < 1) {
-            $('#btnSubmit').prop('disabled', true);  
-          } 
-          else {
-            $('#btnSubmit').prop('disabled', false);
-          }
+          // if ($('#v1').val() < 1 && $('#v2').val() < 1 && $('#v3').val() < 1) {
+          //   $('#btnSubmit').prop('disabled', true);  
+          // } 
+          // else {
+          //   $('#btnSubmit').prop('disabled', false);
+          // }
+      });
+
+
+      $('#input-q1, #input-q2, #input-q3').on('rating.change', function(){
+
+        $('#btnSubmit').prop('disabled', true);
+
+          //alert($('#v1').val());
+
+          if ($('#v1').val() > 0 && $('#v2').val() > 0 && $('#v3').val() > 0) {
+            $('#btnSubmit').prop('disabled', false);  
+          }         
+
       });
 
 
