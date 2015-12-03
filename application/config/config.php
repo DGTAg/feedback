@@ -24,6 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/feedback/';
+//$config['base_url'] = 'http://10.9.168.162/feedback/';
 
 /*
 |--------------------------------------------------------------------------

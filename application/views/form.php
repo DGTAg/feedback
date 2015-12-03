@@ -8,7 +8,8 @@ else if($type=='smartq'){
     $appName = 'SmartQ';
   }
 else if($type=='codify'){
-    $bg = '#93CC93';
+    //
+    $bg = '#808080';
     $appName = 'Codify';
   }
 else if($type=='askgov'){
@@ -51,7 +52,7 @@ else if($type=='moja'){
                 <div class="row" style="text-align:left;">
                   <div class="col-xs-5">
                     <h4>1:
-                      <span>How do you rate the overall Pee@Poo apps?</span>
+                      <span>How do you rate the overall <?php echo $appName; ?> apps?</span>
                     </h4>
                   </div>
                   <div class="col-xs-7">
@@ -76,7 +77,7 @@ data-symbol="&#xe005;" data-default-caption="{rating} hearts" data-star-captions
                 <div class="row" style="text-align:left;">
                   <div class="col-xs-5">
                     <h4>3:
-                      <span>How would you like to recommend this apps to others?</span>
+                      <span>Would you like to recommend this app to others?</span>
                     </h4>
                   </div>
                   <div class="col-xs-7">
@@ -101,7 +102,7 @@ data-rating-class="rating-fa" data-default-caption="{rating} likes" data-star-ca
                 <div class="row control-group" style="text-align:left;">
                   <div class="col-xs-12">
                     <h4>5:
-                      <span>I would like to collaborate. Here's my email: <span style="color:grey;">[optional]</span></span>
+                      <span>I would like to be notified when the app is available to download. Here's my email : <span style="color:grey;">[optional]</span></span>
                     </h4>
                   </div>
                   <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -112,16 +113,23 @@ data-rating-class="rating-fa" data-default-caption="{rating} likes" data-star-ca
                 </div>
               </div>
 
-            <div id="success"></div>
             <div class="row">
                 <div class="col-xs-12" style="text-align:center;">
-                    <input type="submit" class="btn btn-success btn-xl" id="btnSubmit" value="Respons" />
+                    <input type="submit" class="btn btn-success btn-xl" id="btnSubmit" value="Submit" />
 &nbsp;&nbsp;&nbsp;
                     <input type="reset" class="btn btn-cancel btn-xl" value="Cancel" />
                 </div>
             </div>
 
             </form>
+
+            <div class="row">
+                <div class="col-xs-12" style="text-align:center;">
+                  <br><br><strong>I am interested to participate in the next Immersion Programme</strong>
+                  <br><a target="_blank" href='https://goo.gl/wCQt3g' border='0' style=''><img src='<?php echo base_url(); ?>assets/img/qrcode.png' alt=''></a>
+                  <br><a target="_blank" href="https://goo.gl/wCQt3g">https://goo.gl/wCQt3g</a>    
+                </div>
+            </div>
 
           </div>
         </div>

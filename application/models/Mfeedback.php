@@ -30,7 +30,7 @@ class Mfeedback extends CI_Model
             'q3' => $this->input->post('v3'),
             'q4' => $this->input->post('v4'),
             'q5' => $this->input->post('v5'),
-            'datetime' => date('Y-m-d H:m:s')
+            'datetime' => date('Y-m-d H:i:s')
         );
 
         //$this->db->insert('respons', $data);
