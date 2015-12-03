@@ -86,7 +86,7 @@ hr.star-primary:after {
 .header-section {
     text-align: center;
     color: #fff;
-    background: #6A1D84;
+    /*background: #6A1D84;*/
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 15px;

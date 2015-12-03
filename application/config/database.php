@@ -75,10 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'toor',
-	'database' => 'feedback_db',
+	//'hostname' => 'localhost',
+	'hostname' => '127.0.0.1',
+	'username' => 'feedback',
+	'password' => 'feedback',
+	'database' => 'feedback',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

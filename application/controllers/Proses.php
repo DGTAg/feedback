@@ -38,10 +38,37 @@ class Proses extends CI_Controller {
 
 	public function submit($type = NULL)
 	{
+		//$this->load->library('session');
 		if(isset($type)) {
-			$this->mfeedback->insert_feedback($type);
+			if($type=="peepoo")
+				$id = 1;
+			else if ($type=="smartq")
+				$id=2;
+			else if ($type=="codify")
+				$id=3;
+			else if ($type=="askgov")
+				$id=4;
+			else if ($type=="moja")
+				$id=5;
+
+			$res = $this->mfeedback->insert_feedback($id);
+
+			
 		}
 
-		redirect('proses');
+		//echo $type . $id;
+		
+		if ($res) {
+
+			$this->session->set_flashdata('submited', 'Your respons has been added...');
+			redirect('proses/form/' . $type);
+		}
+		else{
+			echo "Your respons failed to save...";
+		}
+
+		
+
+
 	}
 }
