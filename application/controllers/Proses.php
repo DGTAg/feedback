@@ -38,6 +38,7 @@ class Proses extends CI_Controller {
 
 	public function submit($type = NULL)
 	{
+<<<<<<< HEAD
 		//$this->load->library('session');
 		if(isset($type)) {
 			if($type=="peepoo")
@@ -70,5 +71,12 @@ class Proses extends CI_Controller {
 		
 
 
+=======
+		if(isset($type)) {
+			$this->mfeedback->insert_feedback($type);
+		}
+
+		redirect('proses');
+>>>>>>> 1d23411c4c1e3a07ae57bff65d0b8fd8de173318
 	}
 }

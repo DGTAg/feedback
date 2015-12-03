@@ -40,6 +40,7 @@
     $(document).ready(function(){
 
 
+<<<<<<< HEAD
       $('#btnSubmit').prop('disabled', true);
 
       //var v1 = $('#v1').val();
@@ -49,33 +50,42 @@
 
 
 
+=======
+>>>>>>> 1d23411c4c1e3a07ae57bff65d0b8fd8de173318
       $('#input-q1').on('rating.change', function(event, value, caption) {
           console.log(value);
           $('#v1').val(value);
           //alert(value);
           //console.log(caption);
+<<<<<<< HEAD
           // if ($('#v1').val() < 1 && $('#v2').val() < 1 && $('#v3').val() < 1) {
           //   $('#btnSubmit').prop('disabled', true);  
           // } 
           // else {
           //   $('#btnSubmit').prop('disabled', false);
           // }
+=======
+>>>>>>> 1d23411c4c1e3a07ae57bff65d0b8fd8de173318
       });
       $('#input-q2').on('rating.change', function(event, value, caption) {
           console.log(value);
           $('#v2').val(value);
           //console.log(caption);
+<<<<<<< HEAD
           // if ($('#v1').val() < 1    &&      $('#v2').val() < 1    &&     $('#v3').val() < 1) {
           //   $('#btnSubmit').prop('disabled', true);  
           // } 
           // else {
           //   $('#btnSubmit').prop('disabled', false);
           // }
+=======
+>>>>>>> 1d23411c4c1e3a07ae57bff65d0b8fd8de173318
       });
       $('#input-q3').on('rating.change', function(event, value, caption) {
           console.log(value);
           $('#v3').val(value);
           //console.log(caption);
+<<<<<<< HEAD
           // if ($('#v1').val() < 1 && $('#v2').val() < 1 && $('#v3').val() < 1) {
           //   $('#btnSubmit').prop('disabled', true);  
           // } 
@@ -97,6 +107,11 @@
 
       });
 
+=======
+      });
+
+
+>>>>>>> 1d23411c4c1e3a07ae57bff65d0b8fd8de173318
 
     });
     </script>
