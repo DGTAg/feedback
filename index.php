@@ -35,11 +35,7 @@
  * @since	Version 1.0.0
  * @filesource
  */
-<<<<<<< HEAD
 ini_set('date.timezone','Asia/Kuala_Lumpur');
-=======
-
->>>>>>> 1d23411c4c1e3a07ae57bff65d0b8fd8de173318
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT

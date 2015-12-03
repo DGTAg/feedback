@@ -11,7 +11,6 @@ class Mfeedback extends CI_Model
         parent::__construct();
     }
 
-<<<<<<< HEAD
     public function insert_feedback($id='')
     {
         
@@ -44,19 +43,5 @@ class Mfeedback extends CI_Model
         else
             return FALSE;
 
-=======
-    public function insert_feedback($type='')
-    {
-        $data = array(
-                'type' => $type,
-                'q1' => $this->input->post('v1'),
-                'q2' => $this->input->post('v2'),
-                'q3' => $this->input->post('v3'),
-                'q4' => $this->input->post('v4'),
-                'q5' => $this->input->post('v5')
-        );
-
-        $this->db->insert('feedback', $data);
->>>>>>> 1d23411c4c1e3a07ae57bff65d0b8fd8de173318
     }
 }
